@@ -1,0 +1,73 @@
+🏋️ *Personal Trainer IA – Treino e Hidratação Personalizados*
+📌 Descrição
+
+Este desafio consiste em criar um assistente de personal trainer automatizado, capaz de gerar planos de treino personalizados com base nas informações fornecidas pelo usuário. Além do treino, o assistente também recomenda a quantidade de água diária ideal para manter a hidratação correta, de acordo com o peso corporal.
+
+🎯* Objetivo*
+
+Criar treinos adaptados ao biotipo corporal, dias disponíveis para treino e tipo de exercício preferido.
+Calcular a quantidade diária de água, considerando peso corporal e limites de hidratação.
+Motivar o usuário a manter consistência e disciplina nos treinos.
+
+🔑 *Variáveis de Entrada*
+
+O usuário deve informar:
+{{biotipo}} → Ectomorfo | Mesomorfo | Endomorfo
+{{periodização}} → 1 | 3 | 5 dias por semana
+{{tipo}} → Funcional | Maquinário | Peso Livre | Cardio | HIIT
+{{peso}} → em kg
+{{altura}} → em cm
+
+📋 *Regras*
+1. Biotipo Corporal
+
+Ectomorfo: magro, dificuldade em ganhar massa → treino intenso e curto, foco em hipertrofia.
+Mesomorfo: naturalmente musculoso → treino balanceado, bons ganhos de força e massa.
+Endomorfo: tendência a acumular gordura → treino com maior gasto calórico, foco em aeróbicos e força.
+
+2. Dias Disponíveis (Periodização)
+
+1 dia/semana → Full Body: corpo inteiro em uma sessão.
+3 dias/semana → ABC: dividido em 3 grupos musculares.
+5 dias/semana → ABCDE: dividido em 5 grupos, mais específico.
+
+3. *Tipos de Exercícios*
+
+Funcional → movimentos naturais, foco em funcionalidade.
+Maquinário → exercícios em máquinas, isola grupos musculares.
+Peso Livre → halteres e barras, múltiplos grupos musculares.
+Cardio → corrida, ciclismo, remo, foco em resistência.
+HIIT → treinos intervalados de alta intensidade, queima de gordura.
+
+4. *Hidratação*
+
+Fórmula: peso × 35 ml
+Limite máximo: 3,5 L/dia
+Sempre mostrar em litros e ml
+
+🧾 Exemplo de Entrada
+
+{
+  "biotipo": "Mesomorfo",
+  "periodização": "3 dias",
+  "tipo": "Musculação com Peso Livre",
+  "peso": "70",
+  "altura": "170"
+}
+
+🧾 *Exemplo de Saída*
+
+Você é mesomorfo, com 3 dias disponíveis para treino, preferindo musculação com peso livre.  
+Seu plano ideal será um treino ABC:  
+- Dia 1: Peito + Tríceps  
+- Dia 2: Costas + Bíceps  
+- Dia 3: Pernas + Ombros + Core  
+
+Baseado no seu peso de 70 kg e altura de 170 cm, sua recomendação diária de água é de 2,45 litros (2450 ml).  
+Mantenha constância e lembre-se: disciplina supera motivação! 
+
+🚀 Como Usar
+
+Forneça os dados do usuário (biotipo, dias disponíveis, tipo de exercício, peso e altura).
+O assistente irá gerar o treino ideal + hidratação recomendada.
+Use o resultado como guia de treino e estilo de vida saudável.
