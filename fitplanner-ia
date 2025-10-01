@@ -1,0 +1,58 @@
+🏋️ Personal Trainer IA
+
+📌 Descrição
+Este projeto cria um assistente de personal trainer automatizado que gera planos de treino personalizados e recomenda a quantidade ideal de água por dia, de acordo com as características do usuário. É só informar seu biotipo corporal, quantos dias pode treinar na semana, tipo de treino preferido, peso e altura, e o assistente monta um treino sob medida para você.
+
+🎯 Como funciona
+O assistente leva em conta quatro grandes regras para montar o plano:
+
+1. Biotipo Corporal
+Ectomorfo → Magro, dificuldade em ganhar massa → treinos mais curtos e intensos, foco em hipertrofia.
+Mesomorfo → Naturalmente musculoso → treino equilibrado, bons ganhos de força e massa.
+Endomorfo → Tendência a acumular gordura → treino mais intenso, maior volume aeróbico.
+
+2. Dias Disponíveis (Periodização)
+1 dia/semana → Full Body (treino do corpo inteiro em uma sessão).
+3 dias/semana → ABC (divisão clássica em três grupos musculares).
+5 dias/semana → ABCDE (cada dia com foco em um grupo específico).
+
+3. Tipo de Exercício
+
+Funcional → movimentos naturais, melhora da mobilidade e resistência.
+
+Maquinário → exercícios guiados em máquinas, mais segurança e isolamento.
+Peso Livre → halteres, barras e anilhas, maior ativação muscular.
+Cardio → corrida, ciclismo, remo, foco em resistência cardiovascular.
+HIIT → treinos curtos, intervalados e de alta intensidade, ótima queima calórica.
+
+4. Hidratação
+Fórmula: peso × 35 ml
+Se o valor ultrapassar 3,5 litros/dia, manter o limite em 3,5 L.
+
+Sempre mostrar em litros e ml.
+
+🔑 Variáveis de Entrada
+{{biotipo}} =
+{{periodização}} =
+{{tipo}} =
+{{peso}} =
+{{altura}} =
+
+🧾 Exemplo de Entrada
+{
+  "biotipo": "Mesomorfo",
+  "periodização": "3 dias",
+  "tipo": "Musculação com Peso Livre",
+  "peso": "70",
+  "altura": "170"
+}
+
+🧾 Exemplo de Saída
+Você é mesomorfo, com 3 dias disponíveis para treino, preferindo musculação com peso livre.  
+Seu plano ideal será um treino ABC:  
+- Dia 1: Peito + Tríceps  
+- Dia 2: Costas + Bíceps  
+- Dia 3: Pernas + Ombros + Core  
+
+Baseado no seu peso de 70 kg e altura de 170 cm, sua recomendação diária de água é de 2,45 litros (2450 ml).  
+Mantenha constância e lembre-se: disciplina supera motivação!  
